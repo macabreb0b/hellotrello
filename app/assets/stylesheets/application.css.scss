@@ -1,0 +1,146 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap";
+
+body {
+  margin: 0;
+  padding: 0;
+	color: #393939;
+}
+
+html, body, div {
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+/* not for popovers! */
+div.popover, div.popover div {
+  overflow: visible;
+  height: auto;
+}
+
+h1.my-boards {
+	font-size: 1em;
+	color: black;
+}
+
+div.container {
+  width: 100%;
+}
+
+div.module-title {
+  height: 40px;
+  padding: 4px;
+}
+div.module-title h2 {
+	font-size: 1.5em;
+	color: rgb(246, 246, 246);
+  margin: 0;
+}
+
+
+div.module-title * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.module-lists {
+
+}
+
+h4.list-name {
+	font-size: 0.9em;
+	min-height: 1.4em;
+	min-width: 30px;
+	line-height: 1.3em;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	color: #393939;
+}
+
+a.navbar-brand {
+  font-weight: 200;
+  font-size: 28px;
+	padding: 7px;
+	height: auto;
+  font-style: italic;
+	color: rgb(246, 246, 246); /* make this fade in */
+}
+
+div#content {
+  margin:0px auto;
+  width: auto;
+	height: 100%;
+}
+
+
+
+.white_area {
+  overflow: scroll;
+  background-color: white;
+  border: 1px dotted black;
+  border-radius: 4px;
+  moz-border-radius: 4px;
+  padding: 30px;
+}
+
+ul {
+  list-style-type: none !important;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  padding-top: 2px;
+  padding-left: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+input[type="text"] {
+  width: inherit;
+}
+
+#my-navbar {
+	background: #27709b;
+	background: -webkit-linear-gradient(top, #27709b 0, #24688f 100%);
+	background: linear-gradient(to bottom, #27709b 0, #24688f 100%);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(0, 0, 0, 0.1);
+	height: 40px;
+	overflow: hidden;
+	padding: 5px;
+	margin-bottom: 0;
+	position: relative;
+	z-index: 10;
+	border: 0;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+
+#my-navbar * {
+	text-align: center;
+	display: inline-block;
+	margin: 0;
+	height: auto;
+
+}

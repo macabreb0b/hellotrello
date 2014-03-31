@@ -1,0 +1,13 @@
+
+
+<form class="form">
+<div id="form-group">
+<label>
+<input id="list-title" type="text" name="list[title]" autofocus="autofocus" placeholder="Add a list:" class="form-control">
+</label>
+</div>
+<input type="hidden" name="list[board_id]" value="<%= board.id %>">
+
+<button id='newList' class="btn btn-success">Save</button>
+</form>
+<button id="hideForm" class="btn btn-default close btn-sm"><span class="glyphicon glyphicon-remove"></span></button>

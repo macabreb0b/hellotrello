@@ -1,0 +1,7 @@
+
+development:
+  adapter: sqlite3
+  database: trellino_development
+  host: localhost
+  pool: 5
+  timeout: 5000

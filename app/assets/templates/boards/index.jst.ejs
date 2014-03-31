@@ -1,0 +1,22 @@
+<div class='module-title'>
+<h1 class='my-boards'><span class="glyphicon glyphicon-user"></span>&nbsp;My Boards</h1>
+</div>
+
+<div class='module-boards'>
+	<ul class='boards-list'>
+	<% boards.each(function(board) { %>
+	 	<a href='#/boards/<%= board.id %>' >
+		<li class='board_entry'>
+		<%= board.get('title') %>
+		<span class="glyphicon glyphicon-star star-board" ></span>
+
+		</li>
+		</a>
+
+	<% }) %>
+
+	</ul>
+	<div style="float:left">
+	<button id="newBoard" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+	</div>
+</div>

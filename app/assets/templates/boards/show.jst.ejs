@@ -1,0 +1,49 @@
+
+<div class='module-title'>
+  <h2>
+    <%= board.get('title') %>
+  </h2>
+  <button id="remove" class="btn btn-danger">
+    Remove Board
+  </button>
+  <a href="#/">Back to boards index</a>
+</div>
+
+<div class='module-lists'>
+<ul class='lists-list'>
+  <% lists.each(function(list) { %>
+
+  <li class="list_entry connected-sortable list-sortable" data-list-id="<%= list.id %>" data-list-rank="<%= list.get('rank') %>">
+    <div class="list-title">
+      <a href="#" class="list-menu" data-id="<%= list.id %>" data-toggle="popover" data-trigger="manual" data-placement="bottom">
+      	<span class="glyphicon glyphicon-chevron-down"></span>
+    	</a>
+
+    	<h4 class='list-name'><%= list.get('title') %></h4>
+    </div>
+
+  	<ul class="card-list cosortable-card-list" id="list-<%= list.id %>" data-list-id="<%= list.id %>">
+  			<% list.cards().each(function(card) { %>
+  				<li data-card-id="<%= card.id %>" data-card-rank="<%= card.get('rank') %>" data-list-id="<%= list.id %>" class='clearfix'>
+  					<a href="#" class="card-menu" data-id="<%= card.id %>" data-list-id="<%= list.id %>" data-toggle="popover" data-trigger="manual" data-placement="bottom">
+  						<span class="glyphicon glyphicon-chevron-down"></span>
+  					</a>
+            <%= card.get('title') %>
+
+  				</li>
+  			<% }) %>
+  	</ul>
+
+  	<a href="#" class="add-card" data-id="<%= list.id %>">
+      <div class="add-card">
+        Add a card...
+      </div>
+    </a>
+
+  </li>
+  <% }) %>
+
+  <li class="list_entry showForm">Add a list...</li>
+</ul>
+
+</div>

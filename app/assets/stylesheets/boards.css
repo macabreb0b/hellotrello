@@ -1,0 +1,203 @@
+ul.lists-list {
+  overflow-x: auto;
+  white-space: nowrap;
+/*  max-height: 100%;*/
+  height: 100%;
+}
+
+.lists-list::-webkit-scrollbar {
+  border-radius: 12px;
+  height: 10px;
+}
+
+.lists-list::-webkit-scrollbar-track {
+  background-color: #24688f;
+  border-radius: 12px;
+}
+
+.lists-list::-webkit-scrollbar-thumb {
+  background-color: LightBlue;
+  border-radius: 12px;
+}
+
+ul.lists-list a {
+  color: #939393;
+}
+ul.lists-list a:hover {
+  color: #444;
+
+}
+
+li.list_entry {
+
+  background-color: #dbdbdb;
+/*  border: 1px solid #d4d4d4;*/
+  vertical-align: top;
+  text-align: left;
+  font-size: 18px;
+
+  max-height: 100%;
+  width: 256px;
+  margin: 5px;
+  border-radius: 4px;
+
+  padding: 4px 3px;
+  font-size:18px;
+  margin-bottom: 15px;
+  display: inline-block;
+/*  float: left;*/
+}
+
+li.list_entry div.add-card, li.list_entry div.list-title {
+  height: 25px;
+  padding: 4px 4px 1px;
+  margin-bottom: 3px;
+}
+
+.lists-list-placeholder {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 3px;
+  width: 256px;
+	height: 86px;
+  margin: 5px;
+  border-radius: 4px;
+
+  padding: 8px 10px;
+
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+ul.lists-list li.list_entry.ui-sortable-helper {
+	-ms-transform:rotate(5deg);
+	-webkit-transform:rotate(5deg);
+	transform:rotate(5deg);
+	-webkit-box-shadow: 0px 3px 10px 0px rgba(50,50,50,0.75);
+	-moz-box-shadow: 0px 3px 10px 0px rgba(50,50,50,0.75);
+	box-shadow: 0px 3px 10px 0px rgba(50,50,50,0.75);
+}
+
+ul.card-list {
+  white-space: normal;
+  overflow-y: auto;
+  min-height: 10px;
+  max-height: 100%;
+  padding: 0px 4px 1px;
+}
+
+ul.card-list li {
+	background-color: #fafafa;
+	text-align: left;
+	font-size: 0.8em;
+  margin: 0;
+  margin-bottom: 5px;
+	padding: 6px 8px 4px 8px;
+	border-radius: 2px;
+
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(130,130,130,0.75);
+	-moz-box-shadow: 0px 1px 0px 0px rgba(130,130,130,0.75);
+	box-shadow: 0px 1px 0px 0px rgba(130,130,130,0.75);
+	cursor: pointer;
+}
+
+/*ul.card-list li * {
+  float: right;
+}*/
+
+
+ul.card-list li.active {
+	background-color: HoneyDew;
+}
+
+.card-list::-webkit-scrollbar {
+  border-radius: 10px;
+  width: 8px;
+}
+
+.card-list::-webkit-scrollbar-track {
+  background-color: #d0d0d0;
+  border-radius: 10px;
+}
+
+.card-list::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 10px;
+}
+
+ul.card-list li.active.ui-sortable-helper {
+  -ms-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+	transform:rotate(5deg);
+	-webkit-box-shadow: 0px 3px 4px 0px rgba(130,130,130,0.75);
+	-moz-box-shadow: 0px 3px 4px 0px rgba(130,130,130,0.75);
+	box-shadow: 0px 3px 4px 0px rgba(130,130,130,0.75);
+}
+
+
+ul.card-list li.active .card-menu {
+	display: inline;
+}
+
+a.add-card {
+	font-size: 0.8em;
+
+}
+
+ul.boards-list {
+	margin-left: 20px;
+}
+
+ul.boards-list li {
+  background-color: #23719F;
+/*  border: 1px solid #d4d4d4;*/
+
+	color: #f6f6f6;
+  text-align: left;
+  font-size: 18px;
+
+  width: 25%;
+	height: 122px;
+  margin: 3px;
+  border-radius: 4px;
+
+  padding:6px 12px 8px 12px;
+  font-size:18px;
+  margin-bottom: 15px;
+
+  float: left;
+
+}
+
+/*button.newBoard {
+  display: block;
+  clear: both;
+}
+
+button.newList {
+  display: block;
+  clear: both;
+}
+*/
+li.list_entry.showForm {
+	background-color: #777;
+	cursor: pointer;
+}
+
+a.list-menu {
+	float: right;
+}
+
+a.card-menu {
+	float: right;
+	display: none;
+}
+
+span.star-board {
+	float: right;
+	cursor: pointer;
+}
+
+span.list-popover {
+	font-size: 15px;
+	font-weight: normal;
+}
