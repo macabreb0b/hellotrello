@@ -1,7 +1,8 @@
 
 development:
-  adapter: sqlite3
+  adapter: postgresql
   database: trellino_development
+  encoding: utf8
   host: localhost
-  pool: 5
-  timeout: 5000
+  username: appacademy
+  password: appacademy
