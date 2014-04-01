@@ -41,6 +41,14 @@ div.container {
   width: 100%;
 }
 
+div.container.skinny {
+  max-width: 600px;
+}
+
+div.col-auth {
+  height: auto;
+}
+
 div.module-title {
   height: 40px;
   padding: 4px;

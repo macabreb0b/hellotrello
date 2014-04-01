@@ -1,14 +1,41 @@
-<h1>Sign In</h1>
-<form action="<%= session_url %>" method="POST">
-	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-	<label for="email">Email</label>
-	<input id="email" type="text" name="user[email]">
+<div class="container skinny">
+  <div class="row">
+    
+    <div class="col-sm-6 col-auth">
+      <h1>Sign In</h1>
+      
+      <form action="<%= session_url %>" method="POST" class="form">
+      	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  
+        <div class="form-group">
+        	<label for="email">Email
+          	<input class="form-control" id="email" type="text" name="user[email]" >
+          </label>
+        </div>
 
+        <div class="form-group">
+        	<label for="password">Password
+          	<input id="password" type="password" name="user[password]" class="form-control">
+          </label>
+        </div>
 
-	<label for="password">Password</label>
-	<input id="password" type="password" name="user[password]">
+      	<input id="logout" type='submit' value='Login' class='btn btn-default'>
+      </form>
+      <br>
+      New to Hello? <a href="<%= new_user_url %>">Sign Up!</a>
+    </div>
+    
+    <div class="col-sm-6 col-auth">
 
-	<input id="logout" type='submit' value='Login'>
-</form>
-
-<a href="<%= new_user_url %>">New to Hello?</a>
+      
+      <br><br><br><br><br><br>
+      <form action="<%= session_url %>" method="post">
+      	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      	<input class="form-control" id="email" type="hidden" name="user[email]" value='demo_user'>
+      	<input id="password" type="hidden" name="user[password]" value='demo_user'>
+        <button class='btn btn-large btn-success'>Take a spin as a guest</button>
+      </form>
+      
+    </div>
+  </div>
+</div>
