@@ -4,7 +4,6 @@ window.Trellino = {
   Views: {},
   Routers: {},
   initialize: function () {
-    alert('hello from backbone!')
 		this.boards = new Trellino.Collections.Boards()
 
 		new Trellino.Routers.BoardsRouter({
