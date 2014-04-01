@@ -14,15 +14,14 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require underscore
+//= require serializeJSON
 //= require bootstrap
 //= require backbone
 //= require backbone-relational
-//= require serializeJSON
 //= require trellino
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
 //= require_tree ./routers
-//= require_tree ../templates
 //= require_tree .
