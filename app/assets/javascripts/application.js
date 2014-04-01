@@ -17,8 +17,6 @@
 //= require bootstrap
 //= require backbone
 //= require backbone-relational
-//= require underscore
-//= require backbone
 //= require serializeJSON
 //= require trellino
 //= require_tree ../templates
